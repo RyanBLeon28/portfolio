@@ -62,7 +62,7 @@ export default function Hero() {
             style={{ clipPath: hexagonPath }}
           >
             <img 
-              src="../../public/images/myself2.png" 
+              src="/images/myself2.png" 
               alt="Ryan de Leon" 
               className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500 scale-110" 
             />
