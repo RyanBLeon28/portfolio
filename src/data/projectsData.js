@@ -17,7 +17,7 @@ export const projectsData = [
         description: "Desenvolvimento do aplicativo mobile (focado em Android) utilizando React Native para o monitoramento e controle de um equipamento inovador de lavagem. O núcleo técnico do projeto consistiu em estabelecer uma comunicação bidirecional confiável com o hardware da máquina (microcontrolador em C/C++). A arquitetura implementa Bluetooth Low Energy (BLE) para o pareamento seguro e setup inicial offline, e WebSockets para a transmissão de telemetria e execução de comandos em tempo real com baixíssima latência.",
         tech: ["React Native", "Android", "BLE", "WebSockets", "IoT", "C/C++"],
         image: [
-            "/images/maoExtra.jpeg",
+            "/images/welcome.jpeg",
             "/images/maoExtra.jpeg"
         ]
     },
@@ -53,7 +53,7 @@ export const projectsData = [
         title: "Sistema de Chat Distribuído",
         description: "Desenvolvimento do backend em Go para uma aplicação de chat em tempo real com foco em alta disponibilidade e tolerância a falhas. A arquitetura utiliza NGINX como load balancer distribuindo conexões WebSocket entre múltiplos servidores. Para resolver o sincronismo de estado, implementei o padrão Publish/Subscribe usando Redis, garantindo que usuários na mesma sala recebam mensagens instantaneamente, mesmo conectados a instâncias diferentes. O sistema conta com failover automático (redirecionando usuários se um servidor cair) e persistência em MongoDB.",
         tech: ["Go", "Redis", "NGINX", "WebSockets", "MongoDB"],
-        image: "/images/chatOnline2.jpeg"
+        image: "/images/ChatOnline.png"
     },
     {
         id: 5,
@@ -71,6 +71,7 @@ export const projectsData = [
         description: "Estudo prático de desempenho e controle de congestionamento na pilha TCP/IP do kernel Linux. A pesquisa avaliou o comportamento dos algoritmos TCP Reno, CUBIC (baseados em perda) e BBR (baseado em atraso/gargalo). Foram realizados testes de estresse e medições de pacotes transmitidos em diferentes cenários de limitação de banda (10Mbps, 50Mbps e 100Mbps), analisando a eficiência de cada flavor na otimização de vazão (throughput) e mitigação de latência.",
         tech: ["TCP/IP", "Linux Kernel", "BBR", "Networking", "Performance Analysis"],
         image: [
+            "/images/TCP.png",
             "/images/10mbps.png",
             "/images/50mbps.png",
             "/images/100mbps.png"
@@ -81,18 +82,18 @@ export const projectsData = [
         title: "Sistema Operacional",
         description: "Construção prática dos pilares fundamentais de um Sistema Operacional. O projeto foi estruturado em quatro módulos de baixo nível: escalonamento e gerenciamento de processos (CPU), esquemas de alocação e gerenciamento de memória (paginação/virtualização), controle de Entrada/Saída (I/O) e estruturação de sistemas de arquivos. A implementação exigiu domínio sobre concorrência, prevenção de deadlocks e a camada de abstração entre o hardware e o espaço de usuário em ambiente Linux.",
         tech: ["Linux Kernel Concepts", "C", "Process Scheduling", "Memory Management", "File Systems"],
-        image: "/images/SO.jpg"
+        image: "/images/SO.png"
     },
     {
         id: 8,
         title: "Semáforo em FPGA",
-        description: "Criação de um chat para a disciplina de sistemas distribuídos, focando no ...",
+        description: "Criação de um sistema de três semáforos, simulando a operação esperada como no ambiente real com o sincronismo entre as cores vermelho, amarelo e verde. O sistema foi implementado usando uma placa DE0-Nano com máquina de estados.",
         tech: ["FPGA", "Sistemas Digitais", "VHDL"],
-        image: "https://via.placeholder.com/400x400/0f172a/38bdf8?text=LubriLaudo"
+        image: "/images/semaforos.png"
     },
     {
         id: 9,
-        title: "Contador em FPGA",
+        title: "Máquina de estados em FPGA",
         description: "Criação de um chat para a disciplina de sistemas distribuídos, focando no ...",
         tech: ["FPGA", "Sistemas Digitais", "VHDL"],
         image: "/images/FPGA.jpeg"
@@ -102,6 +103,6 @@ export const projectsData = [
         title: "iMenu: Plataforma Mobile de Cardápio Digital",
         description: "Desenvolvimento full-stack de uma solução comercial voltada para a modernização do setor gastronômico. O projeto foca na experiência do usuário (UI/UX) através de um aplicativo mobile responsivo construído com React Native. A arquitetura de backend em Node.js gerencia a lógica de negócios e integrações, enquanto o banco de dados NoSQL (MongoDB) foi adotado para permitir alta flexibilidade na modelagem de catálogos dinâmicos, suportando variações complexas de itens, categorias e preços.",
         tech: ["React Native", "Node.js", "MongoDB", "Mobile App", "Full-Stack"],
-        image: "https://via.placeholder.com/400x400/0f172a/38bdf8?text=iMenu" // Lembre-se de trocar pelo caminho da sua imagem real
+        image: "/images/iMenu.png"
     }
 ];

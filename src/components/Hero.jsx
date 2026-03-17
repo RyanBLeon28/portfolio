@@ -25,9 +25,8 @@ export default function Hero() {
         </h2>
         
         {/* Texto levemente menor no md para notebooks não quebrarem muitas linhas */}
-        <p className="text-gray-400 text-sm md:text-base lg:text-lg mb-8 leading-relaxed max-w-lg font-medium">
-          Estudante de Engenharia de Computação pela Universidade Federal do Rio Grande, durante a graduação desenvolvi projetos pessoais, acadêmicos e participei de projetos de Inovação, focados em resolver problemas complexos reais. 
-          Criando pontes entre hardware e software. Com sólida base em redes, desenvolvimento e sistemas embarcados, construo desde firmware em C/C++ para sensores IoT até backends robustos, explorando inovações em IA e na área segurança.
+        <p className="text-gray-400 text-sm md:text-base lg:text-lg mb-8 leading-relaxed max-w-lg font-medium text-justify">
+           Estudante do 5º ano de Engenharia de Computação pela Universidade Federal do Rio Grande (FURG). Durante minha trajetória, mergulhei em projetos de iniciação científica e de inovação com um objetivo claro: arquitetar soluções eficientes para problemas reais. Sou apaixonado por conectar o mundo físico ao digital — operando desde sistemas embarcados até a estruturação de servidores e APIs. Atualmente, meu principal foco de pesquisa e interesse está na Segurança de Redes, explorando tecnologias avançadas para construir infraestruturas resilientes e protegidas.
         </p>
 
         {/* <div className="flex flex-wrap items-center gap-4 lg:gap-6">
@@ -41,7 +40,6 @@ export default function Hero() {
         </div> */}
       </motion.div>
 
-      {/* LADO DIREITO: Imagem Hexagonal */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -49,12 +47,12 @@ export default function Hero() {
         className="relative flex justify-center items-center h-full z-10 mt-8 md:mt-0"
       >
         <div 
-          className="absolute w-[260px] h-[260px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] border-[4px] lg:border-[5px] border-[#4ADE80]"
+          className="absolute w-[260px] h-[260px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] 2xl:w-[500px] 2xl:h-[500px] border-[4px] lg:border-[5px] 2xl:border-[6px] border-[#4ADE80]"
           style={{ clipPath: 'polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%)' }}
         ></div>
 
         <div 
-          className="w-[220px] h-[220px] md:w-[280px] md:h-[280px] lg:w-[360px] lg:h-[360px] bg-[#4ADE80] flex items-center justify-center shadow-2xl"
+          className="w-[220px] h-[220px] md:w-[280px] md:h-[280px] lg:w-[360px] lg:h-[360px] 2xl:w-[440px] 2xl:h-[440px] bg-[#4ADE80] flex items-center justify-center shadow-2xl"
           style={{ clipPath: hexagonPath }}
         >
           <div 
