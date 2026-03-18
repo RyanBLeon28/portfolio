@@ -40,19 +40,22 @@ export default function Hero() {
         </div> */}
       </motion.div>
 
+      {/* LADO DIREITO: Imagem Hexagonal */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         className="relative flex justify-center items-center h-full z-10 mt-8 md:mt-0"
       >
+        {/* Aumentado o tamanho base (celular) para w-[300px] h-[300px] */}
         <div 
-          className="absolute w-[260px] h-[260px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] 2xl:w-[500px] 2xl:h-[500px] border-[4px] lg:border-[5px] 2xl:border-[6px] border-[#4ADE80]"
+          className="absolute w-[300px] h-[300px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] 2xl:w-[500px] 2xl:h-[500px] border-[4px] lg:border-[5px] 2xl:border-[6px] border-[#4ADE80]"
           style={{ clipPath: 'polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%)' }}
         ></div>
 
+        {/* Aumentado o tamanho base (celular) para w-[260px] h-[260px] */}
         <div 
-          className="w-[220px] h-[220px] md:w-[280px] md:h-[280px] lg:w-[360px] lg:h-[360px] 2xl:w-[440px] 2xl:h-[440px] bg-[#4ADE80] flex items-center justify-center shadow-2xl"
+          className="w-[260px] h-[260px] md:w-[280px] md:h-[280px] lg:w-[360px] lg:h-[360px] 2xl:w-[440px] 2xl:h-[440px] bg-[#4ADE80] flex items-center justify-center shadow-2xl"
           style={{ clipPath: hexagonPath }}
         >
           <div 
