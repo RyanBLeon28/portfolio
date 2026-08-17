@@ -26,7 +26,7 @@ export default function Hero() {
         
         {/* Texto levemente menor no md para notebooks não quebrarem muitas linhas */}
         <p className="text-gray-400 text-sm md:text-base lg:text-lg mb-8 leading-relaxed max-w-lg font-medium text-justify">
-           Estudante do 5º ano de Engenharia de Computação pela Universidade Federal do Rio Grande (FURG). Durante minha trajetória, mergulhei em projetos de iniciação científica e de inovação com um objetivo claro: arquitetar soluções eficientes para problemas reais. Sou apaixonado por conectar o mundo físico ao digital — operando desde sistemas embarcados até a estruturação de servidores e APIs. Atualmente, meu principal foco de pesquisa e interesse está na Segurança de Redes, explorando tecnologias avançadas para construir infraestruturas resilientes e protegidas.
+           Estudante do 5º ano de Engenharia de Computação pela Universidade Federal do Rio Grande (FURG). Durante minha trajetória, mergulhei em projetos de iniciação científica e de inovação com um objetivo claro: conforme as necessidades do cliente, arquitetar soluções eficientes para problemas reais. Sou apaixonado por conectar o mundo físico ao digital — operando desde sistemas embarcados até a estruturação de servidores e APIs. Atualmente, meu principal foco de pesquisa e interesse está na Segurança de Redes, explorando tecnologias avançadas para construir infraestruturas resilientes e protegidas em Redes Definidas por Software (SDN).
         </p>
 
         {/* <div className="flex flex-wrap items-center gap-4 lg:gap-6">
@@ -63,9 +63,9 @@ export default function Hero() {
             style={{ clipPath: hexagonPath }}
           >
             <img 
-              src="/images/myself2.png" 
+              src="/images/fotoperfil.jpeg"
               alt="Ryan de Leon" 
-              className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500 scale-110" 
+              className="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity duration-500 scale-110"
             />
           </div>
         </div>

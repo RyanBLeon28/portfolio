@@ -1,3 +1,37 @@
+export const featuredProjectsData = [
+    {
+        id: 1,
+        title: "SIGMAN — Sistema de Gestão de Manutenção Naval",
+        description: `Sistema de gestão de manutenção (CMMS) desenvolvido para a FURG (Universidade Federal do Rio Grande) gerenciar a manutenção preventiva, corretiva e preditiva da frota de embarcações de pesquisa oceanográfica, substituindo o controle manual em planilhas por um fluxo digital centralizado — do cadastro de embarcações e equipamentos à emissão, execução e histórico de Ordens de Serviço.
+
+O maior diferencial técnico é a árvore de equipamentos da frota: cada Ordem de Serviço e cada Solicitação de Serviço nasce vinculada diretamente ao equipamento de origem — e a Solicitação, por sua vez, à Ordem de Serviço que ela gera. Com isso, a rastreabilidade deixa de ser um recurso isolado e passa a fazer parte da própria estrutura de dados do sistema: é possível percorrer o histórico completo de qualquer equipamento, cruzando manutenções programadas, solicitações e execuções.
+
+A partir dessa mesma árvore, o Plano de Manutenção de 52 Semanas organiza o cronograma anual por periodicidade (da diária à docagem plurianual), feedbacks e alertas por email, com visão semana a semana do que está programado, atrasado ou concluído por embarcação. Inclui ainda gestão de tripulação com perfis de acesso distintos (engenheiro, técnico, estagiário, marinheiro, coordenador) e um dashboard com indicadores de OS por embarcação e monitoramento da frota.`,
+        tech: ["Laravel", "React / Inertia.js", "PostgreSQL"],
+        image: "/images/sigman.png",
+        video: "/SigmanVideo.mp4",
+        link: null,
+        repo: null
+    },
+    {
+        id: 2,
+        title: "Planergy — Monitoramento de Usinas Solares e Gestão de Faturas",
+        description: "Plataforma SaaS multi-tenant e white-label para empresas do setor de energia solar gerenciarem, em um único lugar, o monitoramento de geração das usinas fotovoltaicas de seus clientes e o controle financeiro/tarifário das faturas de energia — cada parceiro opera com sua própria marca e carteira de clientes isolada na mesma base, com um painel master para visão consolidada de toda a operação. O sistema integra diretamente com APIs de inversores fotovoltaicos das principais marcas do mercado para leitura de geração em tempo real. Ainda, conta com um serviço próprio de leitura inteligente de faturas de energia, extraindo consumo, demanda e tarifas sem digitação manual — tratando os diferentes layouts de cada concessionária. O diferencial mais técnico é o motor de regras do setor elétrico brasileiro: cálculo automático de sazonalidade, cobrança de demanda contratada por ciclo (mensal, sazonal ou único) e alertas de risco de multa por ultrapassagem ou não atingimento de demanda contratada — algo que normalmente as integradoras fazem manualmente em planilha.",
+        tech: ["Laravel", "React / Inertia.js", "PostgreSQL", "Multi-tenant SaaS"],
+        image: [
+            "/images/1.png",
+            "/images/2.png",
+            "/images/3.png",
+            "/images/4.png",
+            "/images/5.png",
+            "/images/6.png"
+        ],
+        video: null,
+        link: null,
+        repo: null
+    }
+];
+
 export const projectsData = [
     {
         id: 1,

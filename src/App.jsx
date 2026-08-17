@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Highlights from './components/Highlights';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -36,16 +37,20 @@ export default function App() {
           </motion.div>
         </div>
 
-        <div className="relative z-10 w-full min-h-[70vh] -mt-[10vh] 2xl:-mt-[25vh] bg-[#0B1121]">
-          
+        <div className="relative z-10 w-full bg-[#0B1121] pt-12 pb-[calc(3rem+10vh)] 2xl:pb-[calc(3rem+25vh)]">
+          <Highlights />
+        </div>
+
+        <div className="relative z-20 w-full min-h-[70vh] -mt-[10vh] 2xl:-mt-[25vh] bg-[#0B1121]">
+
           <div className="sticky top-[88px] w-full pt-4 pb-12 overflow-hidden bg-[#0B1121]">
             <motion.div style={{ opacity: projOpacity, scale: projScale, y: projY }}>
               <Projects />
             </motion.div>
           </div>
-          
+
         </div>
-        <div ref={contactRef} className="relative z-20 w-full min-h-[80vh] bg-[#0B1121] border-t border-white/5 pt-20 pb-12">
+        <div ref={contactRef} className="relative z-30 w-full min-h-[80vh] bg-[#0B1121] border-t border-white/5 pt-20 pb-12">
           <Contact />
         </div>
 

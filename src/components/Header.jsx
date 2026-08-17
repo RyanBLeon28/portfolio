@@ -17,6 +17,8 @@ export default function Header() {
           Home
         </a>
         
+        <a href="#destaques" className="hover:text-[#4ADE80] transition-colors">Destaques</a>
+
         <a href="#projetos" className="hover:text-[#4ADE80] transition-colors">Projetos</a>
         
         <a href="#contato" className="hover:text-[#4ADE80] transition-colors">Contato</a>
